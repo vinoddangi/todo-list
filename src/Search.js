@@ -2,11 +2,10 @@ import styled from '@emotion/styled';
 import { alpha, InputBase } from '@mui/material';
 import { SearchOutlined } from '@mui/icons-material';
 import React, { useRef, useState, useEffect } from 'react';
-import { debounce } from './util';
 
 const SearchWrapper = styled('div')(({ theme }) => ({
   position: 'relative',
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: theme.shape ? theme.shape.borderRadius : '2px',
   backgroundColor: alpha(theme.palette.common.white, 0.3),
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 0.4),
