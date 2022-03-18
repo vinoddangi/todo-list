@@ -36,4 +36,4 @@ Your app is ready to be deployed!
 
 ## Demo URL
 
-### [https://tasks-flax-zeta.vercel.app/](https://tasks-flax-zeta.vercel.app/)
+### [https://tasks-vinoddangi.vercel.app/](https://tasks-vinoddangi.vercel.app/)
