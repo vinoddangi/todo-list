@@ -1,16 +1,13 @@
 import React from 'react';
+import { Tasks } from './Tasks';
+import { ThemeProvider } from '@mui/material';
+import { lightTheme } from './theme/lightTheme';
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <h1>React Page </h1>
-        <br />
-        <a className="button-line" href="https://github.com/deityhub" target="_blank">
-          Know more now
-        </a>
-      </div>
-    </div>
+    <ThemeProvider theme={lightTheme}>
+      <Tasks />;
+    </ThemeProvider>
   );
 };
 

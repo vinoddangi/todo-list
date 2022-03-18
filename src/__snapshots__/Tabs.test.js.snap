@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given Tabs renders correctly 1`] = `
+<div
+  className="MuiContainer-root MuiContainer-maxWidthSm css-f2q6qm-MuiContainer-root"
+>
+  <div
+    className="css-1yo1jo6-MuiStack-root"
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSvgIcon-colorWhite MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      data-testid="HomeOutlinedIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+      />
+    </svg>
+    <div
+      className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+    >
+      Tasks
+    </div>
+    <div
+      className="MuiBox-root css-1gsv261"
+    />
+  </div>
+</div>
+`;
