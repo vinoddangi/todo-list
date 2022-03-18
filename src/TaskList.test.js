@@ -1,17 +1,18 @@
 import renderer from 'react-test-renderer';
-import { Tasks } from './Tasks';
 import React from 'react';
+import { TaskList } from './TaskList';
 
 jest.mock('react-redux', () => ({
   ...jest.requireActual('react-redux'),
   useSelector: jest.fn(),
   useDispatch: jest.fn(),
 }));
-
-describe('Given Tasks', () => {
+afterAll(() => jest.clearAllMocks());
+describe('Given TaskList', () => {
   let tree;
+
   beforeEach(() => {
-    const component = renderer.create(<Tasks />);
+    const component = renderer.create(<TaskList />);
     tree = component.toJSON();
   });
 
