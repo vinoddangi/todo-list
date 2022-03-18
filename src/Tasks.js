@@ -36,7 +36,7 @@ function Tasks() {
       setFocus(false);
       const timeout = setTimeout(() => {
         inputRef.current.focus();
-      }, 100);
+      }, 70);
 
       return () => {
         clearTimeout(timeout);
@@ -50,7 +50,7 @@ function Tasks() {
     color: 'white',
   }));
   function addTodo() {
-    if (todoText) {
+    if (inputRef.current.value) {
       dispatch(
         addToList({
           property: 'todos',
