@@ -17,7 +17,7 @@ function TaskList({ items }) {
     dispatch(updateFromList({ property: 'todos', item: { id, favorite } }));
   }
   return (
-    <List sx={{ width: '100%', height: '600px', overflowY: 'auto', scrollbarWidth: 'thin' }}>
+    <List sx={{ width: '100%', height: '500px', overflowY: 'auto', scrollbarWidth: 'thin' }}>
       {items &&
         items.map(({ text, favorite, id }) => {
           function handleFavoriteClick() {
@@ -25,6 +25,23 @@ function TaskList({ items }) {
           }
           function handleDeleteClick() {
             deleteTodo(id);
+          }
+          function Text() {
+            return (
+              <div
+                style={{
+                  textOverflow: 'ellipsis',
+                  width: '90%',
+                  height: '100%',
+                  display: 'inline-block',
+                  overflow: 'hidden',
+                  lineHeight: '100%',
+                  marginTop: '6px',
+                }}
+              >
+                {text}
+              </div>
+            );
           }
           return (
             <ListItem
@@ -39,9 +56,15 @@ function TaskList({ items }) {
                   </IconButton>
                 </Stack>
               }
-              sx={{ width: '100%', bgcolor: 'background.paper', color: 'black', marginTop: '4px' }}
+              sx={{
+                width: '100%',
+                bgcolor: 'background.paper',
+                color: 'black',
+                marginTop: '4px',
+                overflow: 'hidden',
+              }}
             >
-              <ListItemText id={text} primary={text} />
+              <ListItemText id={text} primary={Text()} />
             </ListItem>
           );
         })}

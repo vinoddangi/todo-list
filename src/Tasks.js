@@ -72,7 +72,7 @@ function Tasks() {
   }
 
   return (
-    <Container maxWidth="sm" sx={{ padding: '16px 0' }}>
+    <Container maxWidth="sm" sx={{ padding: '16px 0', minWidth: '400px' }} alignitems="stretch">
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Stack direction="row" spacing={2} alignItems={'center'}>
@@ -85,10 +85,10 @@ function Tasks() {
         <Grid item xs={12}>
           <Search handleSearch={handleSearch} searchTerm={searchTerm} />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sx={{ flexGrow: 1 }}>
           <TaskList items={todos} />
         </Grid>
-        <Grid item xs={9}>
+        <Grid item md={9} xs={8}>
           <TextField
             id="todoText"
             placeholder="Add todo"
@@ -101,7 +101,7 @@ function Tasks() {
           />
         </Grid>
 
-        <Grid item xs={3}>
+        <Grid item md={3} xs={4}>
           <Button variant="contained" onClick={addTodo}>
             Add Todo
           </Button>
