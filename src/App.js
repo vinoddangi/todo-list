@@ -6,7 +6,7 @@ import { lightTheme } from './theme/lightTheme';
 const App = () => {
   return (
     <ThemeProvider theme={lightTheme}>
-      <Tasks />;
+      <Tasks />
     </ThemeProvider>
   );
 };
