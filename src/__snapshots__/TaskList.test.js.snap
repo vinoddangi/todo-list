@@ -2,6 +2,6 @@
 
 exports[`Given TaskList renders correctly 1`] = `
 <ul
-  className="MuiList-root MuiList-padding css-43h3pn-MuiList-root"
+  className="MuiList-root MuiList-padding css-62wvau-MuiList-root"
 />
 `;

@@ -2,7 +2,8 @@
 
 exports[`Given Tasks renders correctly 1`] = `
 <div
-  className="MuiContainer-root MuiContainer-maxWidthSm css-19eygn8-MuiContainer-root"
+  alignitems="stretch"
+  className="MuiContainer-root MuiContainer-maxWidthSm css-73ez2z-MuiContainer-root"
 >
   <div
     className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
@@ -71,14 +72,14 @@ exports[`Given Tasks renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-tv4j1g-MuiGrid-root"
     >
       <ul
-        className="MuiList-root MuiList-padding css-43h3pn-MuiList-root"
+        className="MuiList-root MuiList-padding css-62wvau-MuiList-root"
       />
     </div>
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 css-1qpzhgb-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-md-9 css-1kp9ysn-MuiGrid-root"
     >
       <div
         className="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-12l054h-MuiFormControl-root-MuiTextField-root"
@@ -120,7 +121,7 @@ exports[`Given Tasks renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 css-g04lnj-MuiGrid-root"
     >
       <button
         className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
